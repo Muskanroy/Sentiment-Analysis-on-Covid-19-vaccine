@@ -1,0 +1,41 @@
+
+
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Sentiment Analysis</title>
+  
+</head>
+<body>
+<form role="form" action="/index" method="post">
+
+
+    <table>
+        <tr>
+            <td>
+                Statement :
+            </td>
+            <td>
+                <input type="text" name="Tweet">
+            </td>
+            <td>
+                <button type="Submit" class="btn btn-default">Submit</button>
+
+            </td>
+        </tr>
+        
+    </table>    
+</form>
+
+<p>
+  {% if results %}
+     <h4>{{ results }}</h4>
+    {% endif %}
+
+    
+      
+</p>          
+  
+</body>
+</html>
